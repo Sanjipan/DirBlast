@@ -41,6 +41,7 @@ def Main(wordlist):
             line = line.strip("\n")
             thread = threading.Thread(target=Start_Scan, args=(line,))
             thread.start()
+            time.sleep(0.05)
     except:
             print("\x1b[31m[*] Error Occured\x1b[0m")
     end_time = time.time()
