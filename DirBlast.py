@@ -17,7 +17,7 @@ def Main(wordlist):
     }
 
     # Loding Wordlist
-    file = open(wordlist,'r')
+    file = open(wordlist,'r',encoding="ISO-8859-1")
     lines = file.readlines()
 
     # Checking The URL
